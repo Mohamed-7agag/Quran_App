@@ -41,13 +41,13 @@ class _SurahImageState extends State<SurahImage> {
                 titleText: Text(
                   "تم بنجاح",
                   style: TextStyle(
-                      fontFamily: 'myfont', fontSize: 16, color: Colors.white),
+                      fontFamily: 'myfont', fontSize: 15, color: Colors.white),
                   textAlign: TextAlign.end,
                 ),
                 messageText: Text(
                   "حفظ هذة الصفحة",
                   style: TextStyle(
-                      fontFamily: 'myfont', fontSize: 16, color: Colors.white),
+                      fontFamily: 'myfont', fontSize: 14, color: Colors.white),
                   textAlign: TextAlign.end,
                 ));
             pref?.setInt("markpage", markpage);

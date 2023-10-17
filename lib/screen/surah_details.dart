@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables, unused_local_variable, non_constant_identifier_names, unused_import, sized_box_for_whitespace, prefer_spread_collections, unnecessary_string_interpolations, valid_regexps, unrelated_type_equality_checks
+// ignore_for_file: prefer_typing_uninitialized_variables, unused_local_variable, non_constant_identifier_names, sized_box_for_whitespace, prefer_spread_collections, unnecessary_string_interpolations, valid_regexps, unrelated_type_equality_checks
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_quran/constant.dart';
@@ -23,10 +23,11 @@ class _SurahDetailState extends State<SurahDetail> {
       appBar: AppBar(
         title: Text(
           widget.surahName,
-          style: TextStyle(fontFamily: 'myfont', fontWeight: FontWeight.bold),
+          style: const TextStyle(
+              fontFamily: 'myfont', fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xffa4550a),
+        backgroundColor: const Color(0xffa4550a),
         leading: IconButton(
           onPressed: () {
             saved = true;
@@ -35,47 +36,47 @@ class _SurahDetailState extends State<SurahDetail> {
             pref!.setString("markSurahName", markSurahName);
             pref!.setInt("markSurah", markSurah);
             Get.snackbar("", "",
-                duration: Duration(seconds: 1),
+                duration: const Duration(seconds: 1),
                 backgroundColor: Colors.black54,
-                titleText: Text(
+                titleText: const Text(
                   "تم بنجاح",
                   style: TextStyle(
-                      fontFamily: 'myfont', fontSize: 16, color: Colors.white),
+                      fontFamily: 'myfont', fontSize: 15, color: Colors.white),
                   textAlign: TextAlign.end,
                 ),
-                messageText: Text(
+                messageText: const Text(
                   "حفظ هذة السورة",
                   style: TextStyle(
-                      fontFamily: 'myfont', fontSize: 16, color: Colors.white),
+                      fontFamily: 'myfont', fontSize: 14, color: Colors.white),
                   textAlign: TextAlign.end,
                 ));
           },
-          icon: Icon(Icons.bookmark_border),
+          icon: const Icon(Icons.bookmark_border),
         ),
         actions: [
           IconButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => Homepage(),
+                  builder: (context) => const Homepage(),
                 ));
               },
-              icon: Icon(Icons.arrow_forward_ios)),
+              icon: const Icon(Icons.arrow_forward_ios)),
         ],
       ),
       body: Container(
-        color: Color(0xfffffdf5),
+        color: const Color(0xfffffdf5),
         width: double.infinity,
         height: double.infinity,
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: SingleChildScrollView(
           child: Column(children: [
             widget.surah == "1" || widget.surah == "9"
-                ? Text("")
-                : Text(
+                ? const Text("")
+                : const Text(
                     "بِسْم اللَّه الرَّحْمن الرَّحِيم",
                     style: TextStyle(
                         fontFamily: 'myfont',
-                        fontSize: 30,
+                        fontSize: 25,
                         color: Color(0xffa4550a),
                         fontWeight: FontWeight.bold,
                         height: 1.9),
@@ -118,8 +119,8 @@ RichText _convertString(BuildContext context, String text) {
   return RichText(
     textAlign: TextAlign.center,
     text: TextSpan(
-      style: TextStyle(
-          fontSize: 25,
+      style: const TextStyle(
+          fontSize: 22,
           color: Colors.black,
           fontFamily: 'myfont',
           height: 1.8,
@@ -129,10 +130,10 @@ RichText _convertString(BuildContext context, String text) {
           .map((text) => text.contains("(")
               ? TextSpan(
                   text: text,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Color(0xffa4550a),
                       fontWeight: FontWeight.bold,
-                      fontSize: 26))
+                      fontSize: 25))
               : TextSpan(text: text))
           .toList()),
     ),

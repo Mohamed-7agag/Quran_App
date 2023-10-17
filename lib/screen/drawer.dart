@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, non_constant_identifier_names, unused_element
+// ignore_for_file: sized_box_for_whitespace, non_constant_identifier_names, unused_element
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -31,29 +31,29 @@ class MyDrawer extends StatelessWidget {
           Container(
             width: double.infinity,
             height: 250,
-            color: Color(0xffa4550a),
+            color: const Color(0xffa4550a),
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Container(
-                    width: 80,
+                    width: 75,
                     child: Image.asset(
                       "assets/images/logo1.png",
                       fit: BoxFit.cover,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text(
+                  const Text(
                     "القران الكريم",
                     style: TextStyle(
                         fontFamily: 'myfont',
-                        fontSize: 25,
+                        fontSize: 22,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
                   ),
@@ -61,21 +61,21 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           InkWell(
             onTap: () {
               Share.share("تطبيق القران الكريم");
             },
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   "مشاركة البرنامج",
                   style: TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffa4550a),
                   ),
@@ -94,19 +94,19 @@ class MyDrawer extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           InkWell(
             onTap: _launchUrl,
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   " تقييم البرنامج",
                   style: TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffa4550a),
                   ),
@@ -125,19 +125,19 @@ class MyDrawer extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           InkWell(
             onTap: _launchUrl2,
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   "مساعدة",
                   style: TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffa4550a),
                   ),

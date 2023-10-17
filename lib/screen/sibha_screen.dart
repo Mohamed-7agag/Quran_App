@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, unnecessary_brace_in_string_interps
+// ignore_for_file:sized_box_for_whitespace, unnecessary_brace_in_string_interps
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_quran/screen/main_homepage.dart';
@@ -16,31 +16,29 @@ class _SibhaScreenState extends State<SibhaScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Text(""),
+        leading: const Text(""),
         actions: [
           IconButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => MainHomepage(),
+                  builder: (context) => const MainHomepage(),
                 ));
               },
-              icon: Icon(Icons.arrow_forward_ios))
+              icon: const Icon(Icons.arrow_forward_ios))
         ],
-        backgroundColor: Color(0xffa4550a),
-        title: Text(
+        backgroundColor: const Color(0xffa4550a),
+        title: const Text(
           "المسبحة",
           style: TextStyle(
-              fontFamily: 'myfont',
-              fontSize: 25,
-              fontWeight: FontWeight.w500),
+              fontFamily: 'myfont', fontSize: 23, fontWeight: FontWeight.w500),
         ),
         centerTitle: true,
       ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        padding: EdgeInsets.only(top: 120),
-        color: Color(0xfffffdf5),
+        padding: const EdgeInsets.only(top: 120),
+        color: const Color(0xfffffdf5),
         child: InkWell(
           onTap: () {
             setState(() {
@@ -49,6 +47,7 @@ class _SibhaScreenState extends State<SibhaScreen> {
           },
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               IconButton(
                   onPressed: () {
@@ -56,26 +55,27 @@ class _SibhaScreenState extends State<SibhaScreen> {
                       counter = 0;
                     });
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.restart_alt,
-                    size: 50,
+                    size: 55,
                     color: Color(0xffa4550a),
                   )),
-              SizedBox(
+              const SizedBox(
                 height: 80,
               ),
               Container(
-                width: 220,
-                height: 220,
-                padding: EdgeInsets.only(top: 20),
+                width: 250,
+                height: 250,
+                padding: const EdgeInsets.only(top: 31),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(500),
-                  border: Border.all(color: Color(0xffa4550a), width: 1.2),
+                  border:
+                      Border.all(color: const Color(0xffa4550a), width: 1.2),
                 ),
                 child: Center(
                     child: Text(
                   "${counter}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: 'myfont',
                     fontSize: 80,
                     fontWeight: FontWeight.w500,

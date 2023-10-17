@@ -63,7 +63,7 @@ class _Homepage2State extends State<Homepage2> {
       endDrawer: MyDrawer(),
       body: Container(
         color: Color(0xfffffdf5),
-        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 15),
+        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
         child: ListView.builder(
           itemCount: arabicQuran.length,
           itemBuilder: (BuildContext context, int index) {
@@ -76,15 +76,16 @@ class _Homepage2State extends State<Homepage2> {
                 ));
               },
               child: Card(
+                elevation: 1,
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
+                    borderRadius: BorderRadius.circular(12)),
                 child: ListTile(
                   title: Text(
                     "${arabicQuran[index]['name']}",
                     style: TextStyle(
                         fontFamily: 'myfont',
                         fontWeight: FontWeight.bold,
-                        fontSize: 19,
+                        fontSize: 15,
                         height: 1.8),
                     textDirection: TextDirection.rtl,
                   ),
@@ -93,7 +94,7 @@ class _Homepage2State extends State<Homepage2> {
                     style: TextStyle(
                         fontFamily: 'myfont',
                         fontWeight: FontWeight.bold,
-                        fontSize: 18),
+                        fontSize: 14),
                     textDirection: TextDirection.rtl,
                   ),
                   trailing: Container(
@@ -103,7 +104,7 @@ class _Homepage2State extends State<Homepage2> {
                         child: Text(
                       "${arabicQuran[index]['id']}",
                       style: TextStyle(
-                          fontSize: 15,
+                          fontSize: 11,
                           color: Color(0xffa4550a),
                           fontWeight: FontWeight.w700),
                     )),

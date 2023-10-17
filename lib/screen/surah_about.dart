@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_quran/constant.dart';
 import 'package:flutter_application_quran/screen/homepage3.dart';
@@ -17,43 +15,45 @@ class _SurahAboutState extends State<SurahAbout> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "التفاصيل",
           style: TextStyle(
               fontFamily: 'myfont', fontSize: 22, fontWeight: FontWeight.w600),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xffa4550a),
-        leading: Text(""),
+        backgroundColor: const Color(0xffa4550a),
+        leading: const Text(""),
         actions: [
           IconButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => Homepage3(),
+                  builder: (context) => const Homepage3(),
                 ));
               },
-              icon: Icon(Icons.arrow_forward_ios)),
+              icon: const Icon(Icons.arrow_forward_ios)),
         ],
       ),
       body: Container(
-        color: Color(0xfffffdf5),
+        color: const Color(0xfffffdf5),
         width: double.infinity,
         height: double.infinity,
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(height: 50,),
-            Text(
+            const SizedBox(
+              height: 50,
+            ),
+            const Text(
               "عرض تفاصيل السورة",
               style: TextStyle(
                 fontFamily: 'myfont',
-                fontSize: 32,
+                fontSize: 25,
                 fontWeight: FontWeight.bold,
                 color: Color(0xffa4550a),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             Row(
@@ -61,162 +61,162 @@ class _SurahAboutState extends State<SurahAbout> {
               children: [
                 Text(
                   "${arabicQuran[widget.surahId]['name']}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
                 ),
-                Text(
+                const Text(
                   " : الأسم بالعربية",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 25,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   "${arabicQuran[widget.surahId]['name_translation']}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
                 ),
-                Text(
+                const Text(
                   " : الأسم بالانجليزية",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 25,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   "${arabicQuran[widget.surahId]['array'].length}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
                 ),
-                Text(
+                const Text(
                   " : عدد الأيات",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 25,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   "${arabicQuran[widget.surahId]['words']}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
                 ),
-                Text(
+                const Text(
                   " : عدد الكلمات",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 25,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   "${arabicQuran[widget.surahId]['letters']}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
                 ),
-                Text(
+                const Text(
                   " : عدد الحروف",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 25,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   "${arabicQuran[widget.surahId]['id']}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
                 ),
-                Text(
+                const Text(
                   " : ترتيبها",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 25,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
                   "${arabicQuran[widget.surahId]['type']}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 25,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
                 ),
-                Text(
+                const Text(
                   " : نوعها",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 25,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold),
                 ),
               ],

@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_quran/screen/homepage.dart';
 
@@ -15,9 +13,9 @@ class _SavedSurahState extends State<SavedSurah> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Text(""),
-        backgroundColor: Color(0xffa4550a),
-        title: Text(
+        leading: const Text(""),
+        backgroundColor: const Color(0xffa4550a),
+        title: const Text(
           "المحفوظات",
           style: TextStyle(fontFamily: 'myfont', fontWeight: FontWeight.bold),
         ),
@@ -26,13 +24,19 @@ class _SavedSurahState extends State<SavedSurah> {
           IconButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => Homepage(),
+                  builder: (context) => const Homepage(),
                 ));
               },
-              icon: Icon(Icons.arrow_forward_ios)),
+              icon: const Icon(Icons.arrow_forward_ios)),
         ],
       ),
-      body: Center(child: Text("لا يوجد شي",style: TextStyle(fontSize: 25,fontFamily: 'myfont',fontWeight: FontWeight.bold),),),
+      body: const Center(
+        child: Text(
+          "لا يوجد شي",
+          style: TextStyle(
+              fontSize: 25, fontFamily: 'myfont', fontWeight: FontWeight.bold),
+        ),
+      ),
     );
   }
 }

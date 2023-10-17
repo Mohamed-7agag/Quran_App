@@ -1,14 +1,9 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, use_build_context_synchronously, unnecessary_import, unused_import, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
-
-import 'dart:convert';
+// ignore_for_file: sort_child_properties_last, use_build_context_synchronously, sized_box_for_whitespace,
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_quran/constant.dart';
-import 'package:flutter_application_quran/screen/drawer.dart';
 import 'package:flutter_application_quran/screen/main_homepage.dart';
-import 'package:flutter_application_quran/screen/saved_surah.dart';
 import 'package:flutter_application_quran/screen/surah_about.dart';
-import 'package:flutter_application_quran/screen/surah_details.dart';
 
 class Homepage3 extends StatefulWidget {
   const Homepage3({super.key});
@@ -22,28 +17,27 @@ class _Homepage3State extends State<Homepage3> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Text(""),
+        leading: const Text(""),
         actions: [
           IconButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(MaterialPageRoute(
-                  builder: (context) => MainHomepage(),
+                  builder: (context) => const MainHomepage(),
                 ));
               },
-              icon: Icon(Icons.arrow_forward_ios)),
+              icon: const Icon(Icons.arrow_forward_ios)),
         ],
-        backgroundColor: Color(0xffa4550a),
-        title: Text(
+        backgroundColor: const Color(0xffa4550a),
+        title: const Text(
           "سور القران",
           style: TextStyle(fontFamily: 'myfont', fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
       body: Container(
-        color: Color.fromARGB(255, 250, 247, 235),
-        padding: EdgeInsets.symmetric(horizontal: 5, vertical: 15),
+        color: const Color.fromARGB(255, 250, 247, 235),
+        padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
         child: GridView.builder(
-          
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3, mainAxisExtent: 100),
           itemCount: arabicQuran.length,
@@ -57,14 +51,14 @@ class _Homepage3State extends State<Homepage3> {
                 ));
               },
               child: Card(
-                elevation: 2,
+                elevation: 1,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10)),
                 child: Center(
                     child: Text(
                   arabicQuran[index]['name'],
-                  style: TextStyle(
-                      fontSize: 20,
+                  style: const TextStyle(
+                      fontSize: 18,
                       fontFamily: 'myfont',
                       color: Color(0xffa4550a),
                       fontWeight: FontWeight.bold),
