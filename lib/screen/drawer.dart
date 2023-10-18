@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 class MyDrawer extends StatelessWidget {
   MyDrawer({super.key});
 
-  final Uri url = Uri.parse('https://github.com/');
+  final Uri url = Uri.parse('https://github.com/Mohamed-7agag');
   final Uri url2 = Uri.parse('https://google.com/');
   Future<void> _launchUrl() async {
     if (!await launchUrl(url)) {

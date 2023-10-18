@@ -44,7 +44,7 @@ class _Homepage2State extends State<Homepage2> {
               );
             } else {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => SurahImage(surahImagePos: 20),
+                builder: (context) => SurahImage(surahImagePos: 0),
               ));
             }
           },

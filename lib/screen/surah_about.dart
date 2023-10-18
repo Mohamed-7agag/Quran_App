@@ -63,7 +63,7 @@ class _SurahAboutState extends State<SurahAbout> {
                   "${arabicQuran[widget.surahId]['name']}",
                   style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
@@ -72,13 +72,13 @@ class _SurahAboutState extends State<SurahAbout> {
                   " : الأسم بالعربية",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 22,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
             const SizedBox(
-              height: 25,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -87,7 +87,7 @@ class _SurahAboutState extends State<SurahAbout> {
                   "${arabicQuran[widget.surahId]['name_translation']}",
                   style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
@@ -96,13 +96,13 @@ class _SurahAboutState extends State<SurahAbout> {
                   " : الأسم بالانجليزية",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 22,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
             const SizedBox(
-              height: 25,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -111,7 +111,7 @@ class _SurahAboutState extends State<SurahAbout> {
                   "${arabicQuran[widget.surahId]['array'].length}",
                   style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
@@ -120,13 +120,13 @@ class _SurahAboutState extends State<SurahAbout> {
                   " : عدد الأيات",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 22,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
             const SizedBox(
-              height: 25,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -135,7 +135,7 @@ class _SurahAboutState extends State<SurahAbout> {
                   "${arabicQuran[widget.surahId]['words']}",
                   style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
@@ -144,13 +144,13 @@ class _SurahAboutState extends State<SurahAbout> {
                   " : عدد الكلمات",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 22,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
             const SizedBox(
-              height: 25,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -159,7 +159,7 @@ class _SurahAboutState extends State<SurahAbout> {
                   "${arabicQuran[widget.surahId]['letters']}",
                   style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
@@ -168,13 +168,13 @@ class _SurahAboutState extends State<SurahAbout> {
                   " : عدد الحروف",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 22,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
             const SizedBox(
-              height: 25,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -183,7 +183,7 @@ class _SurahAboutState extends State<SurahAbout> {
                   "${arabicQuran[widget.surahId]['id']}",
                   style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
@@ -192,13 +192,13 @@ class _SurahAboutState extends State<SurahAbout> {
                   " : ترتيبها",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 22,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
             const SizedBox(
-              height: 25,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -207,7 +207,7 @@ class _SurahAboutState extends State<SurahAbout> {
                   "${arabicQuran[widget.surahId]['type']}",
                   style: const TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Color(0xffa4550a),
                   ),
@@ -216,7 +216,7 @@ class _SurahAboutState extends State<SurahAbout> {
                   " : نوعها",
                   style: TextStyle(
                       fontFamily: 'myfont',
-                      fontSize: 22,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                 ),
               ],

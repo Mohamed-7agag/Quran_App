@@ -70,7 +70,7 @@ class _SurahDetailState extends State<SurahDetail> {
         padding: const EdgeInsets.all(10),
         child: SingleChildScrollView(
           child: Column(children: [
-            widget.surah == "1" || widget.surah == "9"
+            widget.surah == 1 || widget.surah == 9
                 ? const Text("")
                 : const Text(
                     "بِسْم اللَّه الرَّحْمن الرَّحِيم",

@@ -174,7 +174,7 @@ class MainHomepage extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 30,
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -241,12 +241,9 @@ class MainHomepage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 30,
-                ),
                 InkWell(
                   onTap: () {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => const SibhaScreen(),
                     ));
                   },
