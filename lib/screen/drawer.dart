@@ -75,7 +75,7 @@ class MyDrawer extends StatelessWidget {
                   "مشاركة البرنامج",
                   style: TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffa4550a),
                   ),
@@ -86,7 +86,7 @@ class MyDrawer extends StatelessWidget {
                 Icon(
                   Icons.share,
                   color: Color(0xffa4550a),
-                  size: 25,
+                  size: 23,
                 ),
                 SizedBox(
                   width: 20,
@@ -95,7 +95,7 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 30,
+            height: 25,
           ),
           InkWell(
             onTap: _launchUrl,
@@ -106,7 +106,7 @@ class MyDrawer extends StatelessWidget {
                   " تقييم البرنامج",
                   style: TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffa4550a),
                   ),
@@ -117,7 +117,7 @@ class MyDrawer extends StatelessWidget {
                 Icon(
                   Icons.rate_review,
                   color: Color(0xffa4550a),
-                  size: 25,
+                  size: 23,
                 ),
                 SizedBox(
                   width: 20,
@@ -126,7 +126,7 @@ class MyDrawer extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 30,
+            height: 25,
           ),
           InkWell(
             onTap: _launchUrl2,
@@ -137,7 +137,7 @@ class MyDrawer extends StatelessWidget {
                   "مساعدة",
                   style: TextStyle(
                     fontFamily: 'myfont',
-                    fontSize: 18,
+                    fontSize: 16,
                     fontWeight: FontWeight.w500,
                     color: Color(0xffa4550a),
                   ),
@@ -148,7 +148,7 @@ class MyDrawer extends StatelessWidget {
                 Icon(
                   Icons.help,
                   color: Color(0xffa4550a),
-                  size: 25,
+                  size: 23,
                 ),
                 SizedBox(
                   width: 20,

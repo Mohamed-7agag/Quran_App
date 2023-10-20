@@ -56,7 +56,7 @@ class _SibhaScreenState extends State<SibhaScreen> {
                     });
                   },
                   icon: const Icon(
-                    Icons.restart_alt,
+                    Icons.autorenew_rounded,
                     size: 55,
                     color: Color(0xffa4550a),
                   )),

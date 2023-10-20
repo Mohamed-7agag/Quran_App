@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_quran/constant.dart';
 import 'package:flutter_application_quran/screen/homepage3.dart';
+import 'package:get/get.dart';
 
 class SurahAbout extends StatefulWidget {
   final int surahId;

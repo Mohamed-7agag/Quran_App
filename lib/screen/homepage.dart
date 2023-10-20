@@ -38,8 +38,8 @@ class _HomepageState extends State<Homepage> {
             }
           },
           icon: const Icon(
-            Icons.bookmark_border,
-            size: 28,
+            Icons.bookmarks_rounded,
+            size: 25,
           ),
         ),
         actions: [

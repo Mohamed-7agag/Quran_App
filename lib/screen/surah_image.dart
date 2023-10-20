@@ -22,7 +22,6 @@ class _SurahImageState extends State<SurahImage> {
   bool ok = false;
   @override
   Widget build(BuildContext context) {
-    // x = 604 - posOfSurah[int.parse(widget.surah)-1];
     return Scaffold(
       appBar: AppBar(
         title: Text(

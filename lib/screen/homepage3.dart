@@ -58,7 +58,7 @@ class _Homepage3State extends State<Homepage3> {
                     child: Text(
                   arabicQuran[index]['name'],
                   style: const TextStyle(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontFamily: 'myfont',
                       color: Color(0xffa4550a),
                       fontWeight: FontWeight.bold),

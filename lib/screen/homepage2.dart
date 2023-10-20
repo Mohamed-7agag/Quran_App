@@ -49,8 +49,8 @@ class _Homepage2State extends State<Homepage2> {
             }
           },
           icon: Icon(
-            Icons.bookmark_border,
-            size: 28,
+            Icons.bookmarks_rounded,
+            size: 25,
           ),
         ),
         backgroundColor: Color(0xffa4550a),

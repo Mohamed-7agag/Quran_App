@@ -74,6 +74,7 @@ List<int> posOfSurah = [
   560,
   562,
   564,
+  566,
   568,
   570,
   572,
@@ -118,7 +119,7 @@ List<int> posOfSurah = [
   603,
   604,
   604,
-  604
+  604,
 ];
 
 PageController mycontroller = PageController();
